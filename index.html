@@ -60,8 +60,8 @@
 	</head>
 	<body>
 		<header>
-			<h1>Video Colorist Firenze</h1>
-			<h2>LUCIO LEPRI</h2>
+		<h1>Video Colorist Firenze</h1>
+		<h2>LUCIO LEPRI</h2>
 		</header>
 		<video controls muted playsinline poster="colordemoreel.jpg" width="100%">
         <source src="http://www.luciolepri.it/colordemoreel.mp4" type="video/mp4">
@@ -74,8 +74,14 @@
 		<h3>Workshop, corsi e lezioni</h3>
 		<p>Sono disponibile anche per lezioni, corsi e workshop di color grading, sia per privati che per scuole e aziende. Questa è un'attività che porto avanti con passione in tutta Italia da quasi dieci anni. Le mie lezioni, che posso tenere anche in remoto, si basano su <strong>DaVinci Resolve</strong>, software che utilizzo dalla prima versione Windows e per il quale ho ottenuto la certificazione ufficiale.</p>
 		<footer id="contatti">
-			<h3>Contatti</h3>
-			<p><a href="mailto:luciolepri@gmail.com">luciolepri@gmail.com</a> - <a href="tel:00393387575359">338 757 53 59</a></p>
+		<h3>Contatti</h3>
+		<p><a href="mailto:luciolepri@gmail.com">luciolepri@gmail.com</a> - <a href="tel:00393387575359">338 757 53 59</a></p>
 		</footer>
+		<script>
+        const video = document.querySelector('video');
+        video.addEventListener('ended', function() {
+        video.load();
+        });
+        </script>
 	</body>
 </html>
