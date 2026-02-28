@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="it">
 	<head>
-		<link rel="icon" href="data:image/gif;base64,R0lGODdhEAAQAIACAAJRUvv9/SwAAAAAEAAQAEACKYyPaQDL79xrNAamEL6zT+uBDfdxktedKESm47Yl76zSZgvb2b2G+14AADs=">
+        <link rel="icon" href="data:image/gif;base64,R0lGODdhEAAQAIACAAJRUvv9/SwAAAAAEAAQAEACKYyPaQDL79xrNAamEL6zT+uBDfdxktedKESm47Yl76zSZgvb2b2G+14AADs=">
+		<link rel="canonical" href="https://www.coloristfirenze.it/">
 		<meta charset="utf-8">
 		<meta name="author" content="Lucio Lepri">
 		<meta name="description" content="Colorist video di base a Firenze con certificazione ufficiale DaVinci Resolve. Disponibile per lavori in remoto, lezioni, workshop e corsi di color grading.">
@@ -81,10 +82,10 @@
 		<h1>Video Colorist Firenze</h1>
 		<h2>LUCIO LEPRI</h2>
 		</header>
-		<video controls muted playsinline poster="colordemoreel.jpg">
-        <source src="https://www.luciolepri.it/colordemoreel.mp4" type="video/mp4">
-        Questo browser non supporta il video.
-        </video>
+		<video controls muted playsinline preload="metadata" poster="colordemoreel.jpg">
+		<source src="https://www.luciolepri.it/colordemoreel.mp4" type="video/mp4">
+		Questo browser non supporta il video.
+		</video>
 		<h3>Color grading</h3>
 		<p>Con oltre 15 anni di esperienza sia in Italia che all'estero, offro servizi di color grading per contenuti di qualsiasi tipo: film e cortometraggi, documentari, videoclip musicali, video aziendali e pubblicità.</p>
 		<p>Grazie a una lunga esperienza sul set, ho un'approfondita conoscenza di tutto il processo di creazione dell'immagine digitale, dalla pre alla post produzione. Posso facilmente comprendere le intenzioni e seguire le direttive del regista e del direttore della fotografia.</p>
@@ -105,12 +106,12 @@
 			</div>
 		</footer>
 
-<script>
-    const video = document.querySelector('video');
-    video.addEventListener('ended', function() {
-        video.load();
-    });
-</script>
+		<script>
+		const video = document.querySelector('video');
+		video.addEventListener('ended', function() {
+		video.load();
+		});
+		</script>
 
-	</body>
+</body>
 </html>
